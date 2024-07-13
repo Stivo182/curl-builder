@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3cafede-f003-4edd-9cfb-269c8dc0acef">
+  <producedTypes>
+    <objectType typeId="d6fc6978-160a-42b1-8b8d-e32fab4cdf61" valueTypeId="bf815bba-d16c-4d62-ba60-37c4d8da3263"/>
+  </producedTypes>
+  <name>CURLBuilder</name>
+  <synonym>
+    <key>ru</key>
+    <value>CURL builder - Конструктор командной строки</value>
+  </synonym>
+  <comment>https://github.com/Stivo182/curl-builder</comment>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="26a35695-548d-47da-90f4-d54497459d29"/>
+  <defaultForm>ExternalDataProcessor.CURLBuilder.Form.Форма</defaultForm>
+  <attributes uuid="ffc232f7-59db-434d-9437-417dd153085b">
+    <name>URL</name>
+    <synonym>
+      <key>ru</key>
+      <value>URL</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="fde5d52d-925d-4178-86a7-c207a4951cf8">
+    <name>МетодЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод запроса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3854e405-3e3f-4996-a8a9-996ae4c19f31">
+    <name>МетодАутентификации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод аутентификации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a8d979ce-55d5-4ead-bebc-cc592743add9">
+    <name>ИмяПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя пользователя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="904c30d3-48ad-48d4-b7ef-52e5f811882d">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="856635e6-e377-422b-987e-3f20226b2e24">
+    <name>КлючДоступаAWS4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ доступа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="993cf5d0-411a-49a1-a171-c66ddff71f91">
+    <name>СекретныйКлючAWS4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Секретный ключ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6346546c-bcd2-4006-942f-c368de8493aa">
+    <name>РегионAWS4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регион</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2c0a7c54-f323-4a35-99bf-cc90153b8c71">
+    <name>СервисAWS4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервис</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7b6f98d6-80b7-41c7-9247-3c18a379e2ca">
+    <name>СертификатКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат клиента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f6f9eb26-1f5c-4747-9ffc-936ebd731b22">
+    <name>ПарольЗакрытогоКлючаСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль закрытого ключа сертификата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="08bd8294-f12d-4cd7-9f9a-2d5cebd56f05">
+    <name>ТипСертификатаКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип сертификата клиента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0f2b4b4d-62a1-4cf5-a9b6-b6d659f21777">
+    <name>ЗакрытыйКлючСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрытый ключ сертификата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1615c76f-9ccb-4638-9d16-1a477ed5230f">
+    <name>КодовоеСловоЗакрытогоКлючаСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кодовое слово закрытого ключа сертификата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="96a841f8-48f2-4c5e-b18a-a769a5aefcce">
+    <name>ТипЗакрытогоКлючаСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип закрытого ключа сертификата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4252751c-fbba-4fd8-8c6e-bb8b44dff86a">
+    <name>СертификатыУдостоверяющихЦентров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификаты удостоверяющих центров</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3d37846b-0994-4220-ab7b-7961e80f5fb2">
+    <name>ПроксиПротокол</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси протокол</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>7</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a2d73f84-81d8-4388-9a95-79806a38d1c1">
+    <name>ПроксиПорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси порт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="26de53e1-b5b2-4c18-bc89-44eb90eec183">
+    <name>ПроксиХост</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси хост</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="07a8cedb-ae8d-44b8-835f-8fc6cc5fb104">
+    <name>ПроксиИмяПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси имя пользователя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="73acfdb3-be23-49bf-b87d-0c06e7003aa3">
+    <name>ПроксиПароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="07bd0a6f-06f9-426e-966a-24991e76f500">
+    <name>ПроксиМетодАутентификации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси метод аутентификации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="67bed300-b142-4aef-8bee-ed73a900155d">
+    <name>ПроксиСертификатКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси сертификат клиента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9de0de11-cf4e-40ce-b3bb-960e26954686">
+    <name>ПроксиПарольЗакрытогоКлючаСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси пароль закрытого ключа сертификата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d72d80f2-3867-43c0-88d6-c2fdeeda6226">
+    <name>ПроксиТипСертификатаКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси тип сертификата клиента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="23d9d86c-1819-4c8c-91c9-2787d4b3c06d">
+    <name>ПроксиЗакрытыйКлючСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси закрытый ключ сертификата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bc0963d5-5a11-4378-a13b-f76769088116">
+    <name>ПроксиКодовоеСловоЗакрытогоКлючаСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси кодовое слово закрытого ключа сертификата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9174cc06-7f1b-4d76-bb06-4b0d4df6369e">
+    <name>ПроксиТипЗакрытогоКлючаСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси тип закрытого ключа сертификата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="dc3e2b84-9cf3-4c0a-ab57-b81c93e2cae9">
+    <name>ПроксиСертификатыУдостоверяющихЦентров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси сертификаты удостоверяющих центров</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d34cd733-f3f7-4fe9-be04-cd42241866b9">
+    <name>РазрешатьПеренаправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешать перенаправления</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="310c3326-5eb1-4365-afd7-c862f32ae416">
+    <name>ЗаголовкиЗапросаТекстом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовки запроса текстом</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="dacca2dc-8e87-42a5-af2a-280887e4c5ba">
+    <name>ВводитьЗаголовкиЗапросаТекстом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вводить заголовки запроса текстом</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a558fcf3-40a5-4a85-91c5-a56b21708282">
+    <name>ТелоЗапросаТекст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тело запроса текст</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="70b22bf9-6466-40a1-aa13-501f77ffc80a">
+    <name>ТелоЗапросаФайл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тело запроса файл</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f09622c9-42ed-4947-85e5-489f629a99cd">
+    <name>ВидОтправляемыхДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид отправляемых данных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fc03847f-003b-40db-82f0-97d636186c04">
+    <name>Таймаут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7d6fb3b2-fe77-4a47-b3c1-a87f3ad830d7">
+    <name>ТаймаутСоединения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут соединения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d5d94f83-60ba-456c-bf29-ec72a12c4e96">
+    <name>МаксимальнаяСкоростьПередачиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальная скорость передачи данных</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5b040545-9917-4682-9b00-fc4e632a668f">
+    <name>ЕдиницаМаксимальнойСкоростиПередачиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица максимальной скорости передачи данных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="657e847e-65bc-4f69-9b66-37ff921d4c6d">
+    <name>МинимальнаяСкоростьПередачиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальная скорость передачи данных</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fb52fff2-d01a-48e8-a363-e6f67d5f8e65">
+    <name>СекундДляОценкиМинимальнойСкорости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Секунд для оценки минимальной скорости</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="61fa2462-6e2a-4a06-9e0c-7ae3943f552e">
+    <name>КоличествоПопыток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество попыток</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="38328e29-c142-46e7-98da-86b1570f91a6">
+    <name>ЗадержкаМеждуПопытками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задержка между попытками</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e2a01876-c90d-4f91-8582-8920c91341bb">
+    <name>ТаймаутПовторныхПопыток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут повторных попыток</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0a8cda8e-122e-4958-bbc9-3006b666c887">
+    <name>РезультатКоманда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат команда</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e8e3dac3-0382-42e8-8d7e-5254052ad23a">
+    <name>Результат1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат 1С</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a02baaae-ae69-4c75-b696-7878404c61be">
+    <name>ТихийРежим</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тихий режим</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a878defa-222c-4a64-bc56-3be387e6e983">
+    <name>ПоказыватьОшибкиВТихомРежиме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать ошибки в тихом режиме</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="14dfb91a-ef0d-4a70-bce6-da3a988b61e8">
+    <name>ФайлСохраненияРезультата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл сохранения результата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8cf389b4-8365-48f7-a65e-0393254eada5">
+    <name>ФайлСохраненияЗаголовков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл сохранения заголовков</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="92d25a01-2ceb-4a67-bd39-af0d3b4b2549">
+    <name>КомандныйИнтерпретатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Командный интерпретатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c004a268-09b1-446d-b46a-e0f0180fa18d">
+    <name>ПострочныйВыводОпций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Построчный вывод опций</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5bd25911-fb4f-4d9f-8fb2-8cfafbb07866">
+    <name>ПроксиВидСертификаУЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси вид сертифика УЦ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9331c7a7-80c0-4de8-b3ed-3873c2da251e">
+    <name>ВидСертификаУЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид сертифика УЦ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="eb2558c0-c120-45a0-8a0d-f1fa47be1cd1">
+    <name>ИспользоватьКраткуюФормуОпций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать краткую форму опций</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="62046ce1-3ff0-4f8a-bce6-ec04349782d8">
+    <name>ОтправлятьДанныеАутентификацииНаДругойХост</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлять данные аутентификации на другой хост</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cba90679-4afd-40fc-916d-1d6d5d3e2df0">
+    <name>МаксимальноеКоличествоПеренаправлений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальное количество перенаправлений</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="e8d31b53-4e83-4ec1-b22b-61a3db82a873">
+    <producedTypes>
+      <objectType typeId="c15958cd-072d-484a-9e2e-a8104135aa5a" valueTypeId="73373be9-181b-48c7-9ea1-5df83020db7a"/>
+      <rowType typeId="52860113-e359-4641-b02b-07514a19985e" valueTypeId="9634e18e-dbe8-4a9e-962a-0d7c6dc73fde"/>
+    </producedTypes>
+    <name>ЗаголовкиЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовки запроса</value>
+    </synonym>
+    <attributes uuid="08a53a52-23ab-4c38-a683-62e3e036e6e3">
+      <name>Имя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+    </attributes>
+    <attributes uuid="beb6f1c5-bc67-471e-a657-f0e5bdb825cc">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <multiLine>true</multiLine>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="cf0be1ae-658b-4962-b48e-15f5cb67d3d4">
+    <producedTypes>
+      <objectType typeId="92a287df-ab2a-4f8d-b543-6ae777aea431" valueTypeId="51445051-04a6-4724-a09b-37ee8041efcf"/>
+      <rowType typeId="0d0fa3d9-f41b-4e40-b217-236383c4741f" valueTypeId="34a12ef7-3295-4751-aa8b-887c9dbce9dd"/>
+    </producedTypes>
+    <name>Файлы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файлы</value>
+    </synonym>
+    <attributes uuid="de01ff83-f82b-4165-9a35-0aab07f8de86">
+      <name>Файл</name>
+      <synonym>
+        <key>ru</key>
+        <value>Файл</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+    </attributes>
+    <attributes uuid="5ea88486-cc53-41a8-99e3-84ffff1e3457">
+      <name>Имя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+    </attributes>
+    <attributes uuid="e779ffe4-902a-44c4-ac87-8b780ecb882e">
+      <name>ТипMIME</name>
+      <synonym>
+        <key>ru</key>
+        <value>MIME-тип</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7c85d51c-a2f0-47c0-b28d-5cb4ddfb4733">
+      <name>ИмяФайла</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя файла</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="06a3e12d-4100-44e7-b02d-87b7653d048c">
+    <producedTypes>
+      <objectType typeId="2371b6bf-eec4-4476-a5dc-1c4af8e85b62" valueTypeId="3d0a5be8-6010-4ffa-8164-262027fe4c8e"/>
+      <rowType typeId="070200fa-cf4e-40dd-9b1b-b1f93925879f" valueTypeId="0c1f91e9-8c5b-48ce-beef-faf38290372a"/>
+    </producedTypes>
+    <name>ПоляФормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поля формы</value>
+    </synonym>
+    <attributes uuid="74b74748-5132-4117-93dc-94291a23e1ce">
+      <name>Имя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+    </attributes>
+    <attributes uuid="3d3427bb-8bf4-40a3-bff6-4686837d8988">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ba3099d5-ddad-47cd-86a4-12e2de927df5">
+      <name>ТипMIME</name>
+      <synonym>
+        <key>ru</key>
+        <value>MIME-тип</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="d295061d-7948-4e21-aa9c-df90854e7c69">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="db27ee45-90e6-423f-919f-76c82fe7e34d">
+    <name>curl_epf</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка cURL</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:ExternalDataProcessor>
