@@ -759,10 +759,10 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <attributes uuid="5bd25911-fb4f-4d9f-8fb2-8cfafbb07866">
-    <name>ПроксиВидСертификаУЦ</name>
+    <name>ПроксиВидСертификатаУЦ</name>
     <synonym>
       <key>ru</key>
-      <value>Прокси вид сертифика УЦ</value>
+      <value>Прокси вид сертификата УЦ</value>
     </synonym>
     <type>
       <types>String</types>
@@ -774,10 +774,10 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <attributes uuid="9331c7a7-80c0-4de8-b3ed-3873c2da251e">
-    <name>ВидСертификаУЦ</name>
+    <name>ВидСертификатаУЦ</name>
     <synonym>
       <key>ru</key>
-      <value>Вид сертифика УЦ</value>
+      <value>Вид сертификата УЦ</value>
     </synonym>
     <type>
       <types>String</types>

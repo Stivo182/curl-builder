@@ -3828,7 +3828,7 @@
               <name>ГруппаПроксиСертификатыУдостоверяющихЦентров</name>
               <id>111</id>
               <items xsi:type="form:FormField">
-                <name>ПроксиВидСертификаУЦ</name>
+                <name>ПроксиВидСертификатаУЦ</name>
                 <id>348</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -3836,15 +3836,15 @@
                   <common>true</common>
                 </userVisible>
                 <dataPath xsi:type="form:DataPath">
-                  <segments>Объект.ПроксиВидСертификаУЦ</segments>
+                  <segments>Объект.ПроксиВидСертификатаУЦ</segments>
                 </dataPath>
                 <titleLocation>None</titleLocation>
                 <handlers>
                   <event>OnChange</event>
-                  <name>ПроксиВидСертификаУЦПриИзменении</name>
+                  <name>ПроксиВидСертификатаУЦПриИзменении</name>
                 </handlers>
                 <extendedTooltip>
-                  <name>ПроксиВидСертификаУЦРасширеннаяПодсказка</name>
+                  <name>ПроксиВидСертификатаУЦРасширеннаяПодсказка</name>
                   <id>350</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -3859,7 +3859,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ПроксиВидСертификаУЦКонтекстноеМеню</name>
+                  <name>ПроксиВидСертификатаУЦКонтекстноеМеню</name>
                   <id>349</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -4546,7 +4546,7 @@
             <name>ГруппаСертификатыУдостоверяющихЦентров</name>
             <id>147</id>
             <items xsi:type="form:FormField">
-              <name>ВидСертификаУЦ</name>
+              <name>ВидСертификатаУЦ</name>
               <id>351</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -4554,15 +4554,15 @@
                 <common>true</common>
               </userVisible>
               <dataPath xsi:type="form:DataPath">
-                <segments>Объект.ВидСертификаУЦ</segments>
+                <segments>Объект.ВидСертификатаУЦ</segments>
               </dataPath>
               <titleLocation>None</titleLocation>
               <handlers>
                 <event>OnChange</event>
-                <name>ВидСертификаУЦПриИзменении</name>
+                <name>ВидСертификатаУЦПриИзменении</name>
               </handlers>
               <extendedTooltip>
-                <name>ВидСертификаУЦРасширеннаяПодсказка</name>
+                <name>ВидСертификатаУЦРасширеннаяПодсказка</name>
                 <id>353</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -4577,7 +4577,7 @@
                 </extInfo>
               </extendedTooltip>
               <contextMenu>
-                <name>ВидСертификаУЦКонтекстноеМеню</name>
+                <name>ВидСертификатаУЦКонтекстноеМеню</name>
                 <id>352</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -5944,7 +5944,7 @@
         <name>ГруппаКнопки</name>
         <id>344</id>
         <items xsi:type="form:Button">
-          <name>ФормаСобратьКоманду</name>
+          <name>СобратьКоманду</name>
           <id>212</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -5952,7 +5952,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>ФормаСобратьКомандуРасширеннаяПодсказка</name>
+            <name>СобратьКомандуРасширеннаяПодсказка</name>
             <id>213</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5967,7 +5967,7 @@
             </extInfo>
           </extendedTooltip>
           <type>UsualButton</type>
-          <commandName>Form.Command.ВыполнитьСобркуКоманды</commandName>
+          <commandName>Form.Command.СобратьКоманду</commandName>
           <representation>Auto</representation>
           <defaultButton>true</defaultButton>
           <autoMaxWidth>true</autoMaxWidth>
@@ -6946,7 +6946,7 @@
     </edit>
   </attributes>
   <formCommands>
-    <name>ВыполнитьСобркуКоманды</name>
+    <name>СобратьКоманду</name>
     <title>
       <key>ru</key>
       <value>Собрать команду</value>
@@ -6957,7 +6957,7 @@
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>ВыполнитьСобркуКоманды</name>
+        <name>СобратьКоманду</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
