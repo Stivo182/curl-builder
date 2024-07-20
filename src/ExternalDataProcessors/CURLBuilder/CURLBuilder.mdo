@@ -426,10 +426,10 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <attributes uuid="d34cd733-f3f7-4fe9-be04-cd42241866b9">
-    <name>РазрешатьПеренаправления</name>
+    <name>РазрешитьПеренаправления</name>
     <synonym>
       <key>ru</key>
-      <value>Разрешать перенаправления</value>
+      <value>Разрешить перенаправления</value>
     </synonym>
     <type>
       <types>Boolean</types>

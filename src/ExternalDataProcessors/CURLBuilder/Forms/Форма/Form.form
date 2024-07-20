@@ -5541,7 +5541,7 @@
               <name>ГруппаПеренаправления</name>
               <id>368</id>
               <items xsi:type="form:FormField">
-                <name>РазрешатьПеренаправления</name>
+                <name>РазрешитьПеренаправления</name>
                 <id>155</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -5549,7 +5549,7 @@
                   <common>true</common>
                 </userVisible>
                 <dataPath xsi:type="form:DataPath">
-                  <segments>Объект.РазрешатьПеренаправления</segments>
+                  <segments>Объект.РазрешитьПеренаправления</segments>
                 </dataPath>
                 <titleLocation>Right</titleLocation>
                 <toolTip>
@@ -5559,10 +5559,10 @@
                 <toolTipRepresentation>ShowBottom</toolTipRepresentation>
                 <handlers>
                   <event>OnChange</event>
-                  <name>РазрешатьПеренаправленияПриИзменении</name>
+                  <name>РазрешитьПеренаправленияПриИзменении</name>
                 </handlers>
                 <extendedTooltip>
-                  <name>РазрешатьПеренаправленияРасширеннаяПодсказка</name>
+                  <name>РазрешитьПеренаправленияРасширеннаяПодсказка</name>
                   <id>157</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -5577,7 +5577,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>РазрешатьПеренаправленияКонтекстноеМеню</name>
+                  <name>РазрешитьПеренаправленияКонтекстноеМеню</name>
                   <id>156</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -5596,7 +5596,7 @@
                 </extInfo>
               </items>
               <items xsi:type="form:FormField">
-                <name>ОтправлятьДанныеАутентификацииНаДругойХост</name>
+                <name>РазрешитьПередачуСведенийАутентификацииНаДругойХост</name>
                 <id>362</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
@@ -5604,11 +5604,11 @@
                   <common>true</common>
                 </userVisible>
                 <dataPath xsi:type="form:DataPath">
-                  <segments>Объект.ОтправлятьДанныеАутентификацииНаДругойХост</segments>
+                  <segments>Объект.РазрешитьПередачуСведенийАутентификацииНаДругойХост</segments>
                 </dataPath>
                 <titleLocation>Right</titleLocation>
                 <extendedTooltip>
-                  <name>ОтправлятьДанныеАутентификацииНаДругойХостРасширеннаяПодсказка</name>
+                  <name>РазрешитьПередачуСведенийАутентификацииНаДругойХостРасширеннаяПодсказка</name>
                   <id>364</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
@@ -5623,7 +5623,7 @@
                   </extInfo>
                 </extendedTooltip>
                 <contextMenu>
-                  <name>ОтправлятьДанныеАутентификацииНаДругойХостКонтекстноеМеню</name>
+                  <name>РазрешитьПередачуСведенийАутентификацииНаДругойХостКонтекстноеМеню</name>
                   <id>363</id>
                   <visible>true</visible>
                   <enabled>true</enabled>
