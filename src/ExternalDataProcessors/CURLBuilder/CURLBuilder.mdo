@@ -828,6 +828,19 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="40ec5a12-f067-43fe-ae00-f2f5b55b9c13">
+    <name>BearerToken</name>
+    <synonym>
+      <key>ru</key>
+      <value>Токен</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="e8d31b53-4e83-4ec1-b22b-61a3db82a873">
     <producedTypes>
       <objectType typeId="c15958cd-072d-484a-9e2e-a8104135aa5a" valueTypeId="73373be9-181b-48c7-9ea1-5df83020db7a"/>
