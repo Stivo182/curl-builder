@@ -801,10 +801,10 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <attributes uuid="62046ce1-3ff0-4f8a-bce6-ec04349782d8">
-    <name>ОтправлятьДанныеАутентификацииНаДругойХост</name>
+    <name>РазрешитьПередачуСведенийАутентификацииНаДругойХост</name>
     <synonym>
       <key>ru</key>
-      <value>Отправлять данные аутентификации на другой хост</value>
+      <value>Разрешить передачу сведений аутентификации на другой хост</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -981,10 +981,10 @@
       <fillChecking>ShowError</fillChecking>
     </attributes>
     <attributes uuid="3d3427bb-8bf4-40a3-bff6-4686837d8988">
-      <name>Значение</name>
+      <name>Текст</name>
       <synonym>
         <key>ru</key>
-        <value>Значение</value>
+        <value>Текст</value>
       </synonym>
       <type>
         <types>String</types>
@@ -992,8 +992,20 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
       <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="bddb7afc-e184-4a90-9380-7c8c5e9bddba">
+      <name>Файл</name>
+      <synonym>
+        <key>ru</key>
+        <value>Файл</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
     </attributes>
     <attributes uuid="ba3099d5-ddad-47cd-86a4-12e2de927df5">
       <name>ТипMIME</name>

@@ -928,18 +928,26 @@
                         </extInfo>
                       </items>
                       <items xsi:type="form:FormField">
-                        <name>ПоляФормыЗначение</name>
+                        <name>ПоляФормыТекст</name>
                         <id>425</id>
+                        <title>
+                          <key>ru</key>
+                          <value>Текст</value>
+                        </title>
                         <visible>true</visible>
                         <enabled>true</enabled>
                         <userVisible>
                           <common>true</common>
                         </userVisible>
                         <dataPath xsi:type="form:DataPath">
-                          <segments>Объект.ПоляФормы.Значение</segments>
+                          <segments>Объект.ПоляФормы.Текст</segments>
                         </dataPath>
+                        <handlers>
+                          <event>OnChange</event>
+                          <name>ПоляФормыТекстПриИзменении</name>
+                        </handlers>
                         <extendedTooltip>
-                          <name>ПоляФормыЗначениеРасширеннаяПодсказка</name>
+                          <name>ПоляФормыТекстРасширеннаяПодсказка</name>
                           <id>427</id>
                           <visible>true</visible>
                           <enabled>true</enabled>
@@ -954,7 +962,7 @@
                           </extInfo>
                         </extendedTooltip>
                         <contextMenu>
-                          <name>ПоляФормыЗначениеКонтекстноеМеню</name>
+                          <name>ПоляФормыТекстКонтекстноеМеню</name>
                           <id>426</id>
                           <visible>true</visible>
                           <enabled>true</enabled>
@@ -969,10 +977,77 @@
                         <headerHorizontalAlign>Left</headerHorizontalAlign>
                         <showInFooter>true</showInFooter>
                         <extInfo xsi:type="form:InputFieldExtInfo">
+                          <handlers>
+                            <event>StartChoice</event>
+                            <name>ПоляФормыТекстНачалоВыбора</name>
+                          </handlers>
                           <width>10</width>
                           <autoMaxWidth>true</autoMaxWidth>
                           <autoMaxHeight>true</autoMaxHeight>
                           <wrap>true</wrap>
+                          <chooseType>true</chooseType>
+                          <typeDomainEnabled>true</typeDomainEnabled>
+                          <textEdit>true</textEdit>
+                        </extInfo>
+                      </items>
+                      <items xsi:type="form:FormField">
+                        <name>ПоляФормыФайл</name>
+                        <id>448</id>
+                        <title>
+                          <key>ru</key>
+                          <value>Текст из файла</value>
+                        </title>
+                        <visible>true</visible>
+                        <enabled>true</enabled>
+                        <userVisible>
+                          <common>true</common>
+                        </userVisible>
+                        <dataPath xsi:type="form:DataPath">
+                          <segments>Объект.ПоляФормы.Файл</segments>
+                        </dataPath>
+                        <handlers>
+                          <event>OnChange</event>
+                          <name>ПоляФормыФайлПриИзменении</name>
+                        </handlers>
+                        <extendedTooltip>
+                          <name>ПоляФормыФайлРасширеннаяПодсказка</name>
+                          <id>450</id>
+                          <visible>true</visible>
+                          <enabled>true</enabled>
+                          <userVisible>
+                            <common>true</common>
+                          </userVisible>
+                          <type>Label</type>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <extInfo xsi:type="form:LabelDecorationExtInfo">
+                            <horizontalAlign>Left</horizontalAlign>
+                          </extInfo>
+                        </extendedTooltip>
+                        <contextMenu>
+                          <name>ПоляФормыФайлКонтекстноеМеню</name>
+                          <id>449</id>
+                          <visible>true</visible>
+                          <enabled>true</enabled>
+                          <userVisible>
+                            <common>true</common>
+                          </userVisible>
+                          <autoFill>true</autoFill>
+                        </contextMenu>
+                        <type>InputField</type>
+                        <editMode>Enter</editMode>
+                        <showInHeader>true</showInHeader>
+                        <headerHorizontalAlign>Left</headerHorizontalAlign>
+                        <showInFooter>true</showInFooter>
+                        <extInfo xsi:type="form:InputFieldExtInfo">
+                          <handlers>
+                            <event>StartChoice</event>
+                            <name>ПоляФормыФайлНачалоВыбора</name>
+                          </handlers>
+                          <autoMaxWidth>true</autoMaxWidth>
+                          <autoMaxHeight>true</autoMaxHeight>
+                          <wrap>true</wrap>
+                          <choiceButton>true</choiceButton>
                           <chooseType>true</chooseType>
                           <typeDomainEnabled>true</typeDomainEnabled>
                           <textEdit>true</textEdit>
