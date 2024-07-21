@@ -3307,6 +3307,61 @@
                 <currentRowUse>Auto</currentRowUse>
               </extInfo>
             </items>
+            <items xsi:type="form:FormField">
+              <name>РазрешитьНезащищенноеПодключениеКПрокси</name>
+              <id>462</id>
+              <title>
+                <key>ru</key>
+                <value>Разрешить незащищенное подключение</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.РазрешитьНезащищенноеПодключениеКПрокси</segments>
+              </dataPath>
+              <titleLocation>Right</titleLocation>
+              <toolTip>
+                <key>ru</key>
+                <value>Разрешает незащищенное подключение к прокси-серверу по HTTPS протоколу.</value>
+              </toolTip>
+              <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+              <extendedTooltip>
+                <name>РазрешитьНезащищенноеПодключениеКПроксиРасширеннаяПодсказка</name>
+                <id>464</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>РазрешитьНезащищенноеПодключениеКПроксиКонтекстноеМеню</name>
+                <id>463</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>CheckBoxField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+                <checkBoxType>Switcher</checkBoxType>
+              </extInfo>
+            </items>
             <items xsi:type="form:FormGroup">
               <name>ГруппаПроксиАутентификация</name>
               <id>280</id>
@@ -5977,6 +6032,57 @@
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
+              <name>РазрешитьНезащищенноеПодключение</name>
+              <id>459</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.РазрешитьНезащищенноеПодключение</segments>
+              </dataPath>
+              <titleLocation>Right</titleLocation>
+              <toolTip>
+                <key>ru</key>
+                <value>Разрешает незащищенное подключение и избегает ошибки с сертификатом TLS в случае, если целевой URL использует самоподписанный сертификат.</value>
+              </toolTip>
+              <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+              <extendedTooltip>
+                <name>РазрешитьНезащищенноеПодключениеРасширеннаяПодсказка</name>
+                <id>461</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>РазрешитьНезащищенноеПодключениеКонтекстноеМеню</name>
+                <id>460</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>CheckBoxField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+                <checkBoxType>Switcher</checkBoxType>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
               <name>ТихийРежим</name>
               <id>291</id>
               <visible>true</visible>
@@ -7217,6 +7323,23 @@
       <value>Возможно получать заголовки</value>
     </title>
     <id>13</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВозможноРазрешитьНезащищенноеПодключение</name>
+    <title>
+      <key>ru</key>
+      <value>Возможно разрешить незащищенное подключение</value>
+    </title>
+    <id>14</id>
     <valueType>
       <types>Boolean</types>
     </valueType>

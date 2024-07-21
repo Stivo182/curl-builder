@@ -865,6 +865,30 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="515f4034-deaa-4036-90c4-10c1fcdcba39">
+    <name>РазрешитьНезащищенноеПодключение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить незащищенное подключение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1e72ce59-9263-42f1-a474-e3692f46e7ba">
+    <name>РазрешитьНезащищенноеПодключениеКПрокси</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить незащищенное подключение к прокси</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="e8d31b53-4e83-4ec1-b22b-61a3db82a873">
     <producedTypes>
       <objectType typeId="c15958cd-072d-484a-9e2e-a8104135aa5a" valueTypeId="73373be9-181b-48c7-9ea1-5df83020db7a"/>
