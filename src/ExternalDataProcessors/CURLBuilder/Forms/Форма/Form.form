@@ -5752,6 +5752,57 @@
           <items xsi:type="form:FormGroup">
             <name>ГруппаПрочиеНастройкиHTTP</name>
             <id>222</id>
+            <items xsi:type="form:FormField">
+              <name>ЗапроситьСжатиеОтвета</name>
+              <id>451</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.ЗапроситьСжатиеОтвета</segments>
+              </dataPath>
+              <titleLocation>Right</titleLocation>
+              <toolTip>
+                <key>ru</key>
+                <value>Запрашивает у веб-сервера ответ в сжатом виде и распаковывает его при получении</value>
+              </toolTip>
+              <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+              <extendedTooltip>
+                <name>ЗапроситьСжатиеОтветаРасширеннаяПодсказка</name>
+                <id>453</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ЗапроситьСжатиеОтветаКонтекстноеМеню</name>
+                <id>452</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>CheckBoxField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+                <checkBoxType>Switcher</checkBoxType>
+              </extInfo>
+            </items>
             <items xsi:type="form:FormGroup">
               <name>ГруппаПеренаправления</name>
               <id>368</id>
@@ -5980,57 +6031,6 @@
           <items xsi:type="form:FormGroup">
             <name>ГруппаПрочее</name>
             <id>289</id>
-            <items xsi:type="form:FormField">
-              <name>ЗапроситьСжатиеОтвета</name>
-              <id>451</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Объект.ЗапроситьСжатиеОтвета</segments>
-              </dataPath>
-              <titleLocation>Right</titleLocation>
-              <toolTip>
-                <key>ru</key>
-                <value>Запрашивает у веб-сервера ответ в сжатом виде и распаковывает его при получении</value>
-              </toolTip>
-              <toolTipRepresentation>ShowBottom</toolTipRepresentation>
-              <extendedTooltip>
-                <name>ЗапроситьСжатиеОтветаРасширеннаяПодсказка</name>
-                <id>453</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <contextMenu>
-                <name>ЗапроситьСжатиеОтветаКонтекстноеМеню</name>
-                <id>452</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <autoFill>true</autoFill>
-              </contextMenu>
-              <type>CheckBoxField</type>
-              <editMode>Enter</editMode>
-              <showInHeader>true</showInHeader>
-              <headerHorizontalAlign>Left</headerHorizontalAlign>
-              <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:CheckBoxFieldExtInfo">
-                <checkBoxType>Switcher</checkBoxType>
-              </extInfo>
-            </items>
             <items xsi:type="form:FormField">
               <name>РазрешитьНезащищенноеПодключение</name>
               <id>459</id>
